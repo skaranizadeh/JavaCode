@@ -5,8 +5,8 @@ public class Worker {
     protected String endDate;
 
     public Worker() {
-
     }
+
     public Worker(String name, String birthDate) {
         this.name = name;
         this.birthDate = birthDate;

@@ -1,6 +1,6 @@
 public class Animal {
-    protected String type;
-    private String size;
+    protected String type;// conditional encapsulation. the attribute can be accessed from subclasses
+    private String size;// private does not allow subclasses access size directly
     private double weight;
 
     public Animal() {

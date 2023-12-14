@@ -25,6 +25,7 @@ public class Main {
         System.out.println(recordStudent);
 
         pojoStudent.setClassList(pojoStudent.getClassList() + ", Java OCP Exam 829");
+        //Record does not have setters so we can not use line below to modify the record student
         //recordStudent.setClassList(recordStudent.classList() + ", Java OCP Exam 829");
 
         System.out.println(pojoStudent.getName() + " is taking " +
