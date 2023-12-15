@@ -92,7 +92,7 @@ class ElectricCar extends Car {
 
     @Override
     protected void runEngine() {
-        System.out.printf("ElectricCar -> runEngine," +
+        System.out.printf("ElectricCar -> switch battery on, Ready!" +
                 " avg kilometer per charge is %.2f, " +
                 "it has %dkw battery%n", avgKmPerCharge, batterySize);
     }
@@ -123,7 +123,7 @@ class HybridCar extends Car {
 
     @Override
     public void startEngine() {
-        System.out.println("HybridCar -> startEngine");
+        System.out.println("HybridCar -> startEngine and switch battery on");
     }
 
     @Override
