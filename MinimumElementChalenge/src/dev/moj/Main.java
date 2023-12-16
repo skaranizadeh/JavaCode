@@ -1,13 +1,18 @@
 package dev.moj;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
         //readIntegers();
-        System.out.println(findMin(readIntegers()));
+        //System.out.println(findMin(readIntegers()));
+        int[] array = readIntegers();
+        System.out.println(Arrays.toString(array));
+        System.out.println(Arrays.toString(reverse(array)));
     }
+
 
     private static int[] readIntegers() {
 
@@ -33,5 +38,17 @@ public class Main {
             }
         }
         return min;
+    }
+
+    private static int[] reverse(int[] array) {
+
+        int maxLength = array.length - 1;
+        int halfLength = array.length / 2;
+        for (int i = 0; i < halfLength; i++) {
+            int temp = array[i];
+            array[i] = array[maxLength - i];
+            array[maxLength - i] = temp;
+        }
+        return array;
     }
 }
